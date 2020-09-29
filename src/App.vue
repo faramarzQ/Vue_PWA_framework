@@ -14,7 +14,7 @@
             elevation="2"
           >کلیک کنید</v-btn>
 
-          <v-chip>{{count}}</v-chip>
+          <v-chip>{{}}</v-chip>
         </div>
 
         <v-spacer></v-spacer>
@@ -32,7 +32,6 @@
 
 <script>
 import HelloWorld from './components/HelloWorld';
-// import axios from 'axios';
 
 export default {
   name: 'App',
@@ -42,20 +41,14 @@ export default {
   },
 
   data: () => ({
-    //
+    user: {}
   }),
 
   methods:  {
     increment() {
-      this.$store.commit('increment')
-      console.log(this.$store.state.shops.name);
-
     }
   },
-  computed: {
-    count() {
-      return this.$store.getters.getCountPlut
-    }
+  mounted () {
   }
 };
 </script>
