@@ -1,7 +1,10 @@
 export default {
   state: {
-    name: 'me'
   },
-  mutations: { },
-  actions: { }
+  mutations: {
+  },
+  getters: {
+  },
+  actions: {
+  },
 }

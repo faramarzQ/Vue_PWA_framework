@@ -8,19 +8,12 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    count: 0
   },
-  mutations: { //only way to change states
-    increment() {
-      this.state.count++
-    }
+  mutations: {
   },
   getters: {
-    getCountPlut: (state) => {
-      return state.count
-    }
   },
-  actions: {  // bussiness logic
+  actions: {
   },
   modules: {
     shops,
