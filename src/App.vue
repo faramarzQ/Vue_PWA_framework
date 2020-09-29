@@ -7,23 +7,14 @@
       >
         <v-container>
         <div class="d-flex align-center">
-          <v-img
-            alt="Vuetify Logo"
-            class="shrink mr-2"
-            contain
-            src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-            transition="scale-transition"
-            width="40"
-          />
 
-          <v-img
-            alt="Vuetify Name"
-            class="shrink mt-1 hidden-sm-and-down"
-            contain
-            min-width="100"
-            src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-            width="100"
-          />
+          <v-btn
+            v-on:click="increment()"
+            color="primary"
+            elevation="2"
+          >کلیک کنید</v-btn>
+
+          <v-chip>{{count}}</v-chip>
         </div>
 
         <v-spacer></v-spacer>
@@ -54,7 +45,17 @@ export default {
     //
   }),
 
-  created: function () {
+  methods:  {
+    increment() {
+      this.$store.commit('increment')
+      console.log(this.$store.state.shops.name);
+
+    }
+  },
+  computed: {
+    count() {
+      return this.$store.getters.getCountPlut
+    }
   }
 };
 </script>
