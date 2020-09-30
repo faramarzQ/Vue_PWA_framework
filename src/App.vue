@@ -8,18 +8,11 @@
         <v-container>
         <div class="d-flex align-center">
 
-          <v-btn
-            v-on:click="increment()"
-            color="primary"
-            elevation="2"
-          >کلیک کنید</v-btn>
-
-          <v-chip>{{}}</v-chip>
+          <v-chip>test</v-chip>
         </div>
 
         <v-spacer></v-spacer>
       </v-container>
-
       </v-app-bar>
 
 
@@ -31,7 +24,10 @@
 </template>
 
 <script>
+import axios from 'axios';
 import HelloWorld from './components/HelloWorld';
+import shopRepository from './repositories/shopRepository'
+import shopService from './sevices/shopService.js'
 
 export default {
   name: 'App',
@@ -45,10 +41,13 @@ export default {
   }),
 
   methods:  {
-    increment() {
-    }
   },
   mounted () {
+    shopService.initialize()
   }
 };
 </script>
+
+<style lang="scss">
+    @import './assets/styles/custom.scss';
+</style>
