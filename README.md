@@ -1,6 +1,6 @@
 # Customized Vue Framework
 
-a vue.js Template implemented on SPA software Architecture, uses VueX, Vue-router, and other javascript libraries. i also added other design pattern to project to be able to maintain and develop easier in the future
+a vue.js Template implemented on SPA software Architecture, uses VueX, Vue-router, and other javascript libraries. i also added other design patterns including Sevice Pattern, Repository pattern and Factory pattern also layers like Model Classes to the project to be able to maintain and develope easier in the future.
 
 ## Project setup
 ```
