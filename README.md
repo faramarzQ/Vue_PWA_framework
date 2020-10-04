@@ -1,4 +1,4 @@
-# testing_vue_ui
+# A Vue Framework
 
 ## Project setup
 ```
